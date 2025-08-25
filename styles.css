@@ -87,7 +87,7 @@ body::before {
             opacity: 0;
             transform: translateY(-50px);
             animation: fadeInDown 1s ease forwards;
-            animation-delay: 0.3s;
+            
         }
         
         @keyframes fadeInDown {
