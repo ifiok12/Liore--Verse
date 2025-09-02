@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Liore Verse</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Parisienne&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -53,26 +53,29 @@
     }
 
     .logo-text {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: 3.5rem;
-      font-weight: 900;
+      font-weight: 800;
       color: #4F0C0C;
       margin-bottom: 1.5rem;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
     .welcome-text {
-      font-family: 'Parisienne', cursive;
-      font-size: 2.5rem;
-      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
       margin-bottom: 0.5rem;
     }
 
     .tagline {
-      font-size: 1.2rem;
-      font-style: italic;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
       margin-bottom: 2rem;
-      opacity: 0.85;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
     .cta-section {
@@ -113,63 +116,60 @@
 
     @media (max-width: 768px) {
       .logo-text { font-size: 2.5rem; }
-      .welcome-text { font-size: 2rem; }
+      .welcome-text { font-size: 1.8rem; }
+      .tagline { font-size: 1.2rem; }
     }
 
-
-
-
-
     /* Entrance animation */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
 
-.container {
-  text-align: center;
-  max-width: 800px;
-  padding: 2rem;
-  opacity: 0; /* start hidden */
-  animation: fadeUp 1.5s ease-out forwards; /* entrance effect */
-}
+    .container {
+      text-align: center;
+      max-width: 800px;
+      padding: 2rem;
+      opacity: 0; /* start hidden */
+      animation: fadeUp 1.5s ease-out forwards; /* entrance effect */
+    }
 
-/* Make logo appear with a delay */
-.logo-wrapper {
-  animation: fadeUp 1.2s ease-out 0.2s forwards;
-  opacity: 0;
-}
+    /* Make logo appear with a delay */
+    .logo-wrapper {
+      animation: fadeUp 1.2s ease-out 0.2s forwards;
+      opacity: 0;
+    }
 
-.logo-text, 
-.welcome-text, 
-.tagline, 
-.cta-section, 
-.footer {
-  opacity: 0;
-  animation: fadeUp 1.5s ease-out forwards;
-}
+    .logo-text, 
+    .welcome-text, 
+    .tagline, 
+    .cta-section, 
+    .footer {
+      opacity: 0;
+      animation: fadeUp 1.5s ease-out forwards;
+    }
 
-.logo-text { animation-delay: 0.4s; }
-.welcome-text { animation-delay: 0.6s; }
-.tagline { animation-delay: 0.8s; }
-.cta-section { animation-delay: 1s; }
-.footer { animation-delay: 1.2s; }
+    .logo-text { animation-delay: 0.4s; }
+    .welcome-text { animation-delay: 0.6s; }
+    .tagline { animation-delay: 0.8s; }
+    .cta-section { animation-delay: 1s; }
+    .footer { animation-delay: 1.2s; }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="logo-wrapper">
-      <img src="WhatsApp-image_20250824_170357.png" alt="Liore Verse Logo" class="logo-img">
+      <img src="996e8a15-0bde-4a5c-95d1-d014568ac981_IMG-605212312.png" alt="Liore Verse Logo" class="logo-img">
     </div>
     <h1 class="logo-text">LIORE VERSE</h1>
     <h2 class="welcome-text">Welcome to Liore Verse</h2>
-    <p class="tagline">Where Vision Meets Reality</p>
+    <p class="tagline">no talk, moves.</p>
 
     <div class="cta-section">
       <a href="indexx.html" class="cta-button">GET STARTED <i class="fas fa-arrow-right"></i></a>
